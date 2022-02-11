@@ -1,0 +1,49 @@
+@use "../Abstracts/" as *;
+
+.hero {
+  background-image: $bg-linear;
+
+  .swiper {
+    height: 100vh;
+
+    .swiper-slide {
+      img {
+        transform: scale(0.4);
+        transform-origin: right bottom;
+        transition: transform 0.6s ease;
+      }
+
+      &-active,
+      &-duplicate-prev {
+        img {
+          transform: scale(0.4);
+        }
+      }
+
+      &-active {
+        img {
+          transform-origin: left bottom;
+        }
+      }
+
+      &.swiper-slide-next {
+        .hero__slide__img {
+          @include flex(center, center);
+        }
+
+        .hero__slide__txt {
+          opacity: 1;
+        }
+
+        img {
+          transform: scale(0.75);
+          transform-origin: center;
+
+          @include mobile {
+            transform: scale(0.5);
+          }
+        }
+      }
+    }
+  }
+}
