@@ -49,6 +49,8 @@
           opacity: 0;
           visibility: hidden;
           transition: opacity 0.5s ease;
+          display: flex;
+          flex-direction: row;
 
           @include mobile {
             opacity: 1;
@@ -68,6 +70,7 @@
             position: relative;
             bottom: unset;
             left: unset;
+            justify-content: space-between;
           }
         }
 
@@ -77,6 +80,7 @@
           @include mobile {
             position: relative;
             right: unset;
+            justify-content: space-between;
           }
         }
       }

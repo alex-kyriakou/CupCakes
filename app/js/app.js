@@ -17,6 +17,15 @@ const swiper = new Swiper(".swiper", {
     type: "bullets",
     clickable: true,
   },
+  breakpoints: {
+    250: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    600: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 // Moving Buttons
@@ -30,4 +39,14 @@ heroSection.addEventListener("mousemove", (e) => {
     const y = (window.innerHeight - e.pageY * speed) / percent;
     btn.style.transform = `translateX(${x}px) translateY(${y}px)`;
   });
+});
+
+// Shrink Header when Scroll
+const header = document.querySelector("header");
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    header.classList.add("shrink");
+  } else {
+    header.classList.remove("shrink");
+  }
 });

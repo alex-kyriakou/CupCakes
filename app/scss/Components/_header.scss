@@ -12,7 +12,11 @@ header {
 
   &.shrink {
     height: $header-shrink-height;
-    background-origin: $body-bg;
+    // background-origin: $body-bg;
+    background: rgba(0, 0, 0, 0.0125);
+    overflow: hidden;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(3px);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     @include mobile {

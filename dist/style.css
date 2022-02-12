@@ -89,7 +89,10 @@ header {
 }
 header.shrink {
   height: 90px;
-  background-origin: #fff;
+  background: rgba(0, 0, 0, 0.0125);
+  overflow: hidden;
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(3px);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 @media only screen and (max-width: 600px) {
@@ -228,6 +231,8 @@ header.active {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: row;
 }
 @media only screen and (max-width: 600px) {
   .hero .swiper .hero__slide__img .btn {
@@ -249,6 +254,7 @@ header.active {
     position: relative;
     bottom: unset;
     left: unset;
+    justify-content: space-between;
   }
 }
 .hero .swiper .hero__slide__img .btn-right {
@@ -258,6 +264,7 @@ header.active {
   .hero .swiper .hero__slide__img .btn-right {
     position: relative;
     right: unset;
+    justify-content: space-between;
   }
 }
 .hero .swiper .swiper-slide img {
@@ -360,6 +367,16 @@ header.active {
 }
 .btn-left {
   border-top-left-radius: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding: 0.5rem 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
