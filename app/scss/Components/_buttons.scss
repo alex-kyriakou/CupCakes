@@ -1,0 +1,38 @@
+@use "../Abstracts/" as *;
+
+.btn {
+  border: none;
+  border-radius: $border-radius;
+  outline: none;
+  background-color: $main-color;
+  color: $txt-white;
+  padding: 1.1rem 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: $font-family;
+  box-shadow: 0px 4px 23px 6px rgba(245, 71, 73, 0.6);
+  cursor: pointer;
+  transition: box-shadow 0.3 ease;
+  white-space: nowrap;
+
+  @include tablet {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
+    box-shadow: 0px 4px 23px 18px rgba(245, 71, 73, 0.4);
+  }
+
+  &-small {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  &-right {
+    border-top-right-radius: 0;
+  }
+
+  &-left {
+    border-top-left-radius: 0;
+  }
+}

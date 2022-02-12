@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: $body-bg;
+  background-color: lightcyan;
   font-family: $font-family;
   font-weight: 400;
   line-height: 1.5;
@@ -48,6 +48,14 @@ img {
   position: relative;
   padding: 0 2rem;
   margin: auto;
+}
+.container__hero {
+  max-width: 1577px;
+  position: relative;
+  padding: 0 2rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 // Section Header
