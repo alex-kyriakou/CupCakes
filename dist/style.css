@@ -80,6 +80,10 @@ img {
   margin-top: 3rem;
 }
 
+.txt-main {
+  color: #f54749;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -234,8 +238,6 @@ header.active {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease;
-  display: flex;
-  flex-direction: row;
 }
 @media only screen and (max-width: 600px) {
   .hero .swiper .hero__slide__img .btn {
@@ -257,7 +259,6 @@ header.active {
     position: relative;
     bottom: unset;
     left: unset;
-    justify-content: space-between;
   }
 }
 .hero .swiper .hero__slide__img .btn-right {
@@ -267,7 +268,6 @@ header.active {
   .hero .swiper .hero__slide__img .btn-right {
     position: relative;
     right: unset;
-    justify-content: space-between;
   }
 }
 .hero .swiper .swiper-slide img {
@@ -399,6 +399,7 @@ header.active {
 }
 .product-card:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-image: linear-gradient(180deg, #fef5f6 75.52%, rgba(255, 255, 255, 0) 100%);
 }
 .product-card__img {
   position: relative;
@@ -419,6 +420,44 @@ header.active {
   margin-top: 0.5rem;
   text-align: center;
   font-family: inherit;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 1024px) {
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+    padding: 2rem 0;
+  }
+  .about__img {
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+  }
+}
+.about__img {
+  place-self: center;
+}
+@media only screen and (max-width: 1024px) {
+  .about__img img {
+    border-radius: 30px;
+  }
+}
+.about__img img {
+  border-radius: 30px;
+}
+.about__info {
+  padding: 3rem;
+  position: relative;
+}
+.about__info__description {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
