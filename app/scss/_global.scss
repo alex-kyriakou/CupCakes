@@ -58,7 +58,7 @@ img {
   align-items: center;
 }
 
-// Section Header
+// Section
 .section {
   padding: 6rem 0;
   position: relative;
@@ -77,5 +77,9 @@ img {
       left: 0;
       top: 100%;
     }
+  }
+
+  &__content {
+    margin-top: 3rem;
   }
 }
