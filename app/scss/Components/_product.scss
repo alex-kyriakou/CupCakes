@@ -16,6 +16,7 @@
 
   &:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid lightcyan;
 
     background-image: linear-gradient(
       180deg,
@@ -39,6 +40,14 @@
 
   &:hover &__img .btn-wraper {
     opacity: 1;
+  }
+
+  &__name {
+    border: 1px solid lightcyan;
+    border-radius: 12px;
+    width: 100%;
+
+    background-color: lightcyan;
   }
 
   &__price,
