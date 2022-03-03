@@ -1,5 +1,5 @@
 # CupCakes landing page
 
-Responsive Website Using HTML SCSS &amp; JavaScript
+A Simple responsive Website for Pancakes  Using HTML SCSS &amp; JavaScript
 
-https://alex-kyriakou.github.io/CupCakes/#Flavours
+Output: https://alex-kyriakou.github.io/CupCakes/#Flavours
